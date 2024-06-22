@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+:root {
+  --swiper-navigation-size: 2rem;
+}
+
+body {
+}
+
+.change-my-color:hover {
+  fill: green;
+}
+
+#header.stick {
+  position: sticky;
+}
+
+#nav.show {
+  left: 0%;
+}
+
+#close-icon.show {
+  top: 20px;
+}
+
+.content.active {
+  display: block;
+}
+
+.l-btn.active {
+  color: #fb923c;
+  border-color: #fb923c;
+}
+
+.bg-side {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  #close-icon.show {
+    top: -50px;
+  }
+}
+
+.animate-button {
+  -webkit-animation: btn-animation 0.5s linear infinite;
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+@keyframes btn-animation {
+  0% {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+  }
+
+  50% {
+    -webkit-filter: brightness(1.1) drop-shadow(0 0 20px #fdea54);
+    filter: brightness(1.1) drop-shadow(0 0 20px #fdea54);
+  }
+}
